@@ -1,0 +1,7 @@
+{
+  "name": "AmrutaDeliver",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
