@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="flex justify-between p-2">
+      <div>
+        <ion-menu-button>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </ion-menu-button>
+      </div>
+      <div>
+        <p class="text-white font-bold text-lg">Amruta's Chicken</p>
+      </div>
+      <div routerLink="/login">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+        </svg>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="pl-2 pr-2 pt-2">
+    <ion-slides class="slider" [options]="slideOptions11" pager="true" #slider
+      (ionSlidesDidLoad11)="slidesDidLoad11(slider)">
+      <ion-slide>
+        <img class=" img1 mb-8 rounded-md" src="assets/images/s1.png" />
+      </ion-slide>
+      <ion-slide>
+        <img class=" img1 mb-8" src="assets/images/s2.png" />
+      </ion-slide>
+      <ion-slide>
+        <img class=" img1 mb-8" src="assets/images/s3.png" />
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <div align="center" class="p-2">
+    <button class="custom-btn btn-12"><span>None !</span><span>Active Order</span></button>
+  </div>
+
+  <div align="center" class="-mt-3">
+    <img width="60%" height="60%" src="assets/images/emptyy.gif" alt="">
+    <p class="tracking-in-expand text-black text-lg"><b>You don't have any order yet.</b></p>
+  </div>
+
+</ion-content>
+<app-footer></app-footer>

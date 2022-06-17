@@ -1,0 +1,135 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-toolbar>
+      <ion-buttons color="light" slot="start">
+        <ion-back-button color="light"></ion-back-button>
+      </ion-buttons>
+      <ion-title color="light"> Cancled Orders </ion-title>
+      <div routerLink="/login" slot="end" class="pr-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+        </svg>
+      </div>
+      <!-- <ion-icon name="log-out-outline" slot="end" class="font-bold text-2xl text-white pr-2"></ion-icon> -->
+    </ion-toolbar>
+  </ion-toolbar>
+
+</ion-header>
+
+<!-- <ion-header>
+  <ion-toolbar>
+    <div class="flex justify-between p-2">
+      <div>
+        <ion-buttons color="light" slot="start">
+          <ion-back-button color="light"></ion-back-button>
+        </ion-buttons>
+      </div>
+      <div>
+        <p class="text-white font-bold text-lg">Cancled Orders</p>
+      </div>
+      <div routerLink="/login">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+        </svg>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <ion-card class="rounded-md shadow-md border-2 border-gray-200 hover:border-green-300">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <img class="rounded-md" src="assets/images/chicken_drum_stick.jpg" alt="">
+        </ion-col>
+        <ion-col size="8">
+          <p class="text-md text-gray-800 font-semibold">Chicken Drum Stick<span class="text-right text-gray-600 pl-6">2
+              June </span>
+          </p>
+          <p class="text-gray-800 text-sm">Rushikesh Patil</p>
+          <p class="text-gray-600 text-sm">Ravi Nagar, Amravati</p>
+          <p>
+            <span class="text-green-600">1 Items, 1kg</span>&nbsp;| &nbsp;<span class="text-orange-500">
+              <ion-icon name="call-outline"></ion-icon>&nbsp;7867564534
+            </span>
+          </p>
+
+
+          <!-- <div class="flex justify-between  pr-2">
+                <div>
+                  <p class="text-red-600 text-sm">₹ 380.00</p>
+                </div>
+    
+                <div>
+                  <ion-chip class="-mt-1" outline color="dark">
+                    <ion-label> Order
+                      NO. 125</ion-label>
+                  </ion-chip>
+                </div>
+    
+              </div> -->
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+  <!-- <div>
+      <div align="center">
+          <ion-spinner name="crescent"></ion-spinner>
+          <br />
+          <p align="center" style="color: black">
+              Loading...
+          </p>
+          <br />
+          <img src="assets/images/empty.gif" style="width: 50%; height: 50%" />
+          <br />
+          <b style="font-size: larger"> You don't have any order yet.</b>
+      </div>
+  </div> -->
+
+
+  <!-- <div>
+    <ion-card class="shadow-md rounded-md ">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="5">
+            <p class="text-md text-gray-600 font-semibold">Order No</p>
+          </ion-col>
+          <ion-col size="1">
+            <p class="text-md text-gray-600 font-semibold">:</p>
+          </ion-col>
+          <ion-col size="6">
+            <p class="text-md text-gray-800 font-bold">125</p>
+          </ion-col>
+
+          <ion-col size="5">
+            <p class="text-md text-gray-600 font-semibold">Customer Name</p>
+          </ion-col>
+          <ion-col size="1">
+            <p class="text-md text-gray-600 font-semibold">:</p>
+          </ion-col>
+          <ion-col size="6">
+            <p class="text-md text-gray-800 font-bold truncate">Rushikesh Patil</p>
+          </ion-col>
+
+          <ion-col size="5">
+            <p class="text-md text-gray-600 font-semibold">Address</p>
+          </ion-col>
+          <ion-col size="1">
+            <p class="text-md text-gray-600 font-semibold">:</p>
+          </ion-col>
+          <ion-col size="6">
+            <p class="text-md text-gray-800 font-bold truncate">Ravi Nagar, Amravati</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  </div> -->
+
+
+</ion-content>
+<app-footer></app-footer>

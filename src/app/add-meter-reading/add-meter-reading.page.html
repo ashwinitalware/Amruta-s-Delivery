@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-toolbar>
+      <ion-buttons color="light" slot="start">
+        <ion-back-button color="light"></ion-back-button>
+      </ion-buttons>
+      <ion-title color="light">Add Meter Reading</ion-title>
+
+    </ion-toolbar>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div>
+    <ion-item>
+      <ion-label position="floating">Vehicle Number</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item class="mt-2">
+      <ion-label position="floating">Enter Reading</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item class="mt-2">
+      <ion-label position="floating">Select File</ion-label>
+      <ion-input type="file" class="mt-6"></ion-input>
+    </ion-item><br>
+    <div class="mt-2">
+      <button class="btn-grad">
+        Submit Reading
+      </button>
+    </div>
+    <!-- <div align="center" class="pt-2">
+            <ion-button expand="block" class="w-full " color="danger">Submit Reading</ion-button>
+        </div> -->
+  </div>
+
+</ion-content>
+<app-footer></app-footer>

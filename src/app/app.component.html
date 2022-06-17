@@ -1,3 +1,89 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="start" contentId="main" menuClose="left">
+    <ion-content>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#FF7B00" fill-opacity="1"
+            d="M0,256L48,256C96,256,192,256,288,224C384,192,480,128,576,128C672,128,768,192,864,202.7C960,213,1056,171,1152,176C1248,181,1344,235,1392,261.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+          </path>
+        </svg>
+      </div>
+
+      <div class=" flex justify-start border-b-2 border-orange-600 p-2 profile_div">
+        <div class="-mt-2">
+          <img class="profile" src="assets/images/man.png" alt="">
+        </div>
+        <div class="ml-3">
+          <ion-text class="pt-3 text-black"><b>Rushikesh Patil</b><br>
+            <p class="text-sm text-black">+91 7867564534</p><br>
+          </ion-text>
+        </div>
+      </div>
+
+      <!-- <div class=" flex justify-start p-2 profile_div">
+        <div class="mt-2">
+          <img class="profile" src="assets/images/profile1.png" alt="">
+        </div>
+        <div class="ml-3 mt-3">
+          <ion-text class="pt-3 text-black"><b>Rushikesh Patil</b><br>
+            <p class="text-sm text-black">+91 7867564534</p><br>
+          </ion-text>
+        </div>
+      </div> -->
+
+      <ion-list class="menu-items" lines="none">
+        <ion-item lines="none" routerLink="/dashboard">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+          </svg>
+          <ion-text color="dark" class="pl-4">Home</ion-text>
+        </ion-item>
+
+        <ion-menu-toggle auto-hide="false">
+          <ion-item lines="none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            <ion-text color="dark" class="pl-4">Mobile Number</ion-text>
+          </ion-item>
+
+          <ion-item routerLink="/profile">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <ion-text color="dark" class="pl-4">City</ion-text>
+          </ion-item>
+
+          <ion-item routerLink="/meter-reading">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <!-- <ion-icon color="danger" class="text-base" name="information-circle-outline"></ion-icon> -->
+            <ion-text color="dark" class="pl-4">Add Meter Reading</ion-text>
+          </ion-item>
+
+          <ion-item routerLink="/login">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+            </svg>
+            <!-- <ion-icon color="danger" class="text-base" name="log-out-outline"></ion-icon> -->
+            <ion-text color="dark" class="pl-4">Log Out</ion-text>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main">
+  </ion-router-outlet>
 </ion-app>

@@ -1,0 +1,70 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-toolbar>
+            <ion-buttons color="light" slot="start">
+                <ion-back-button color="light"></ion-back-button>
+            </ion-buttons>
+            <ion-title color="light"> Meter Reading History </ion-title>
+
+        </ion-toolbar>
+    </ion-toolbar>
+
+</ion-header>
+
+<ion-content >
+
+    <div class="p-2">
+        <ion-card class="shadow-md rounded-md bg-gray-100 ">
+            <ion-grid>
+                <ion-row>
+                    <ion-col size="5">
+                        <p class="text-md text-gray-600 font-semibold">Date</p>
+                    </ion-col>
+                    <ion-col size="1">
+                        <p class="text-md text-gray-600 font-semibold">:</p>
+                    </ion-col>
+                    <ion-col size="6">
+                        <p class="text-md text-gray-800 font-bold">12/05/2022</p>
+                    </ion-col>
+
+                    <ion-col size="5">
+                        <p class="text-md text-gray-600 font-semibold">Vehicle Number</p>
+                    </ion-col>
+                    <ion-col size="1">
+                        <p class="text-md text-gray-600 font-semibold">:</p>
+                    </ion-col>
+                    <ion-col size="6">
+                        <p class="text-md text-gray-800 font-bold truncate"> MH27BP4507</p>
+                    </ion-col>
+
+                    <ion-col size="5">
+                        <p class="text-md text-gray-600 font-semibold">Reading</p>
+                    </ion-col>
+                    <ion-col size="1">
+                        <p class="text-md text-gray-600 font-semibold">:</p>
+                    </ion-col>
+                    <ion-col size="6">
+                        <p class="text-md text-gray-800 font-bold truncate">2532</p>
+                    </ion-col>
+                    <ion-col size="5">
+                        <p class="text-md text-gray-600 font-semibold">Reading Photo</p>
+                    </ion-col>
+                    <ion-col size="1">
+                        <p class="text-md text-gray-600 font-semibold">:</p>
+                    </ion-col>
+                    <ion-col size="6">
+                        <ion-input type="file"></ion-input>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-card>
+    </div>
+
+    <ion-fab horizontal="end" vertical="bottom" slot="fixed" routerLink="/add-meter-reading">
+        <ion-fab-button fab-icon>
+            <ion-icon name="add-circle-outline"></ion-icon>
+            <!-- <ion-icon name="funnel-outline" color="light" ios="chevron-back-circle"></ion-icon> -->
+        </ion-fab-button>
+    </ion-fab>
+</ion-content>
+<app-footer></app-footer>
